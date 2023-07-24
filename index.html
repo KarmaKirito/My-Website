@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Product Store</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="sidebar-toggle" onclick="toggleSidebar()">
+                <div id="sidebar-symbol" class="bar"></div>
+                <div id="sidebar-symbol" class="bar"></div>
+                <div id="sidebar-symbol" class="bar"></div>
+            </div>
+            <h1>Welcome to our Product Store</h1>
+            <div id="search-bar">
+                <input type="text" id="search-input" placeholder="Search product...">
+                <button onclick="searchProducts()">Search</button>
+            </div>
+            <nav>
+                <a href="login.html">Login</a>
+                <a href="create-account.html">Create Account</a>
+            </nav>
+        </header>
+        <aside id="sidebar">
+            <ul>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </aside>
+        <section id="products">
+            <div class="product">
+                <img src="product1.jpg" alt="Product 1">
+                <h2>Product 1</h2>
+                <p><del>Price: $19.99</del></p>
+                <p>Price: $3.99<span class="discount-tag">SALE: -$10.00</span></p>
+                <button id="shop-button" onclick="addToCart('Product 1')">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <img src="product2.jpg" alt="Product 2">
+                <h2>Product 2</h2>
+                <p>Price: $29.99</p>
+                <button id="shop-button" onclick="addToCart('Product 2')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="product3.jpg" alt="Product 3">
+                <h2>Slavery</h2>
+                <p>Price: $39.99</p>
+                <button id="shop-button" onclick="addToCart('Product 3')">Add to Cart</button>
+            </div>
+            
+            <!-- Add more product items as needed -->
+        </section>
+
+        <section id="not-found">
+            <h2>No Products Found</h2>
+            <p>We couldn't find any products matching your search.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2023 Product Store. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+    </section>
+</body>
+</html>

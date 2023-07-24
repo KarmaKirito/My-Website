@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="sidebar-toggle" onclick="toggleSidebar()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <h1>Welcome to our Product Store</h1>
+            <nav>
+                <a href="login.html">Login</a>
+                <a href="create-account.html">Create Account</a>
+            </nav>
+        </header>
+        <aside id="sidebar">
+            <ul>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </aside>
+        <section id="main-section">
+            <div class="profile">
+                <div class="profile-info">
+                    <h2>Username</h2>
+                    <p>Email: example@example.com</p>
+                </div>
+                <div class="profile-picture">
+                    <input id="file-input" type="file" name="profile-picture" accept="image/*" hidden>
+                    <button id="upload-btn" onclick="document.getElementById('file-input').click()">Upload an image</button>
+                    <img id="profile-image" src="default-profile-picture.png" alt="Profile Picture">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Product Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
