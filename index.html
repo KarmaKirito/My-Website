@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+    </script>
     <meta charset="UTF-8">
     <title>Product Store</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js" defer></script>
+    <script src="script2.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -21,7 +23,7 @@
             </div>
             <nav>
                 <a href="login.html">Login</a>
-                <a href="create-account.html">Create Account</a>
+                <a href="Create_account.html">Create Account</a>
             </nav>
         </header>
         <aside id="sidebar">
@@ -35,7 +37,7 @@
                 <img src="product1.jpg" alt="Product 1">
                 <h2>Product 1</h2>
                 <p><del>Price: $19.99</del></p>
-                <p>Price: $3.99<span class="discount-tag">SALE: -$10.00</span></p>
+                <p>Price: $9.99<span class="discount-tag">SALE: -$10.00</span></p>
                 <button id="shop-button" onclick="addToCart('Product 1')">Add to Cart</button>
             </div>
             
@@ -48,7 +50,8 @@
             <div class="product">
                 <img src="product3.jpg" alt="Product 3">
                 <h2>Slavery</h2>
-                <p>Price: $39.99</p>
+                <p><del>Price: $39.99</del></p>
+                <p>Price: $3.99 <span class="discount-tag">SALE: -$36.00</span></p>
                 <button id="shop-button" onclick="addToCart('Product 3')">Add to Cart</button>
             </div>
             
