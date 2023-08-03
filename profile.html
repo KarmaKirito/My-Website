@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>Profile</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -29,8 +33,8 @@
         <section id="main-section">
             <div class="profile">
                 <div class="profile-info">
-                    <h2>Username</h2>
-                    <p>Email: example@example.com</p>
+                    <h2 id="displayName">Username</h2>
+                    <p id="emailid">Email: example@example.com</p>
                 </div>
                 <div class="profile-picture">
                     <input id="file-input" type="file" name="profile-picture" accept="image/*" hidden>
@@ -44,7 +48,5 @@
     <footer>
         <p>&copy; 2023 Product Store. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
