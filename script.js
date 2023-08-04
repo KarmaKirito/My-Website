@@ -1,12 +1,5 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyAxP4OUJSp4dwQz0uLW05EsFvezFNTbe-k",
-    authDomain: "registration-form-e84c2.firebaseapp.com",
-    databaseURL: "https://registration-form-e84c2-default-rtdb.firebaseio.com/",
-    projectId: "registration-form-e84c2",
-    storageBucket: "registration-form-e84c2.appspot.com",
-    messagingSenderId: "306491614824",
-    appId: "1:306491614824:web:36f4d94c3a8527380f7ddd",
-    measurementId: "G-02VYYWWQYK"
+    priv info
   };
   
   // initialize firebase
